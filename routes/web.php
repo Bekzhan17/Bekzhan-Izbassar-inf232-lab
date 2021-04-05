@@ -19,3 +19,6 @@ Route::get('/1', function () {
 
 Route::get('/uploadfile','UploadFileController@index');
 Route::post('/uploadfile','UploadFileController@showUploadFile');
+
+Route::get('/multiuploads', 'UploadController@uploadForm');
+Route::post('/multiuploads', 'UploadController@uploadSubmit');
